@@ -1,0 +1,79 @@
+.header
+  height 45px
+  background-color blue
+.radio-block
+  display inline-block
+  height 25px
+  line-height 18px
+  .radio-btn
+    display inline-block
+    width 12px
+    height 12px
+    border 2px solid red
+    border-radius 50%
+    vertical-align bottom
+  &.selected
+    .icon
+      display inline-block
+      width 4px
+      height 4px
+      margin 2px
+      border 2px solid transparent
+      border-radius 50%
+      background-color red
+.select-box
+  width 80%
+  position relative
+  .select-title
+    position relative
+    height 40px
+    padding 0 10px
+    background-color #efefef
+    border 1px solid #cecece
+    border-radius 5px
+    line-height 40px
+    &:before
+    &:after
+      content ''
+      position absolute
+      top 14px
+      right 23px
+      display block
+      width 2px
+      height 12px
+      background-color #ababab
+      transform rotate(-45deg)
+    &:after
+      right 15px
+      transform rotate(45deg)
+  .select-list
+    position absolute
+    display none
+    top 38px
+    right 0
+    left 0
+    z-index 3
+    border 1px solid #cecece
+    border-radius 0 0 5px 5px
+    background-color #efefef
+    list-style none
+    margin 0
+    padding 0
+    .select-li
+      position relative
+      height 40px
+      padding 0 10px
+      line-height 40px
+      &:after
+        content ""
+        position absolute
+        right 0
+        bottom 0
+        left 10px
+        display block
+        height 1px
+        background-color #cecece
+      &:last-child:after
+        display none
+
+

@@ -1,0 +1,119 @@
+body {
+  background-color: #a0a0a0;
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+}
+.header .icon-back {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("../images/loading/nav_back_icon@2x.png") no-repeat left 25px center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 2em;
+  color: #ed692b;
+}
+.form-list {
+  display: flex;
+}
+.form-list .form-coll-input {
+  width: 100%;
+  background-color: #efeff4;
+}
+.form-list .form-coll-input .code-text {
+  width: 100%;
+  background: none;
+  border: none;
+  line-height: 30px;
+}
+.form-header {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.form-header .form-cell-input {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+}
+.form-header .form-cell-input .code-input {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4;
+  border: none;
+  border-radius: 5px;
+}
+.info_box {
+  background-color: #fff;
+  padding: 20px 15px;
+}
+.info_box .info_img {
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 35px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background-color: #efefef;
+}
+.info_box .info_img:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  z-index: 3;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #efefef;
+}
+.info_cell {
+  background-color: #fff;
+}
+.image-cell {
+  display: flex;
+}
+.image-cell .image-block {
+  text-align: center;
+  line-height: 30px;
+  flex: 1;
+  height: 60px;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  background-color: #e15f00;
+  margin: 5px;
+}
+.image-cell .image-back {
+  width: 30%;
+  height: 60px;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  background-color: #e15f00;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+.bt_box {
+  width: 80%;
+  height: 45px;
+  margin: auto;
+  margin-top: 5px;
+}
+.bt_box .btn_login {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  border: none;
+  color: #fff;
+}

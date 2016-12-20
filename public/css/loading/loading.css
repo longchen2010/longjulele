@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f5eeea;
+}
+.log {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  background: url("../images/loading/content_img_logo@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #999;
+  text-align: center;
+}
