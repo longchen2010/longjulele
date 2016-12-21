@@ -15,10 +15,10 @@ app.use('/',express.static(viewsPath))
 var publicPath=path.join(__dirname,'public');
 app.use('/public',express.static(publicPath));
 app.use('/api',proxy({
-	target:'http/122.10.30.153:9901',
+	target:'http/122.10.30.153:16912',
 	pathRewrite:{'^/api':'/'}
 }))
-app.listen(9996,function(){
-	console.log('server run at port 9999');
+app.listen(16912,function(){
+	console.log('server run at port 16912');
 })
 module.exports=app;
