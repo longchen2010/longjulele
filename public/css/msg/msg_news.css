@@ -1,0 +1,278 @@
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.tab-box {
+  height: 32px;
+  padding: 6px;
+  background-color: #fff;
+}
+.tab-bar {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  border-radius: 5px;
+  border: 1px solid #ea5404;
+  color: #ea5404;
+  line-height: 30px;
+}
+.tab-bar .tab-bar-cell {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+.tab-bar .tab-bar-cell:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #ea5404;
+}
+.tab-bar .tab-bar-cell:last-child:after {
+  content: '';
+  display: none;
+}
+.tab-bar .tab-bar-cell.active {
+  background-color: #ea5404;
+  color: #fff;
+}
+.tab-bar .tab-bar-cell .num {
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+}
+.demand-cells {
+  display: none;
+  padding: 0 12px;
+}
+.demand-cells.active {
+  display: block;
+}
+.demand-cells .demand-cell {
+  background-color: #fff;
+  padding: 5px 0;
+  margin-top: 12px;
+  border-radius: 5px;
+  line-height: 30px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.demand-cells .demand-cell .demand-title {
+  height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #d6d7dc;
+  font-size: 14px;
+}
+.demand-cells .demand-cell .demand-info {
+  margin: 0;
+  padding: 12px;
+  padding-bottom: 0;
+  line-height: 18px;
+  font-size: 13px;
+  color: #646464;
+  text-indent: 1em;
+}
+.demand-cells .demand-cell .demand-time {
+  color: #646464;
+  font-style: normal;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 12px;
+  margin: 0;
+}
+.demand-cells {
+  padding: 0 12px;
+}
+.demand-cells .demand-cell {
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 12px;
+  border-radius: 5px;
+  line-height: 30px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.demand-cells .demand-cell .demand-title {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #d6d7dc;
+  font-size: 14px;
+}
+.demand-cells .demand-cell .demand-title:after {
+  display: none;
+}
+.demand-cells .demand-cell .demand-title .d-t-name {
+  flex: 1;
+}
+.demand-cells .demand-cell .demand-title .d-t-time {
+  color: #646464;
+  font-style: normal;
+  text-align: right;
+  font-size: 12px;
+}
+.demand-cells .demand-cell .demand-info {
+  margin: 0;
+  padding: 12px;
+  padding-bottom: 0;
+  line-height: 18px;
+  font-size: 13px;
+  color: #646464;
+  text-indent: 1em;
+}
+.demand-cells .demand-cell .demand-footer {
+  margin: 0;
+  padding-left: 12px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #646464;
+}
+.demand-cells {
+  padding: 0 12px;
+}
+.demand-cells .demand-cell {
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 12px;
+  border-radius: 5px;
+  line-height: 30px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.demand-cells .demand-cell .demand-title {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  position: relative;
+}
+.demand-cells .demand-cell .demand-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: -10px;
+  left: 0;
+  background: url("../../img/content_list_border.9@2x.png") no-repeat;
+  background-size: 100% 50%;
+}
+.demand-cells .demand-cell .demand-title .d-t-name {
+  flex: 1;
+}
+.demand-cells .demand-cell .demand-title .d-t-tag {
+  diaplay: inline-block;
+  width: 45px;
+  height: 20px;
+  background-color: #15b755;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  text-align: center;
+  margin: 7px 0;
+  border-radius: 5px;
+}
+.demand-cells .demand-cell .demand-title .broker {
+  background-color: #0193e6;
+}
+.demand-cells .demand-cell .demand-title .investment {
+  background-color: #97b715;
+}
+.demand-cells .demand-cell .demand-title .agent {
+  background-color: #ea5404;
+}
+.demand-cells .demand-cell .demand-info {
+  margin: 0;
+  padding: 12px;
+  line-height: 18px;
+  font-size: 13px;
+}
+.demand-cells .demand-cell .demand-footer {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+.demand-cells .demand-cell .demand-footer .btn-detail {
+  width: 85px;
+  height: 25px;
+  background-color: #efeff4;
+  color: #707071;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.demand-cells .demand-cell .demand-footer .demand-time {
+  flex: 1;
+  color: #646464;
+  font-style: normal;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 12px;
+}
+.footer {
+  height: 50px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d6d7dc;
+  display: flex;
+}
+.footer .footer-block {
+  text-align: center;
+  color: #b4b4b4;
+  flex: 1;
+}
+.footer .footer-block .footer-icon {
+  width: 50px;
+  height: 25px;
+  display: block;
+  background: url("../../img/bottom_nor_icon04@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+  margin: 0 auto;
+}
+.footer .footer-block .order {
+  background: url("../../img/bottom_nor_icon03@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .news {
+  background: url("../../img/bottom_nor_icon02@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .info {
+  background: url("../../img/bottom_nor_icon01@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active {
+  color: #ea5404;
+}
+.footer .footer-block.active .footer-icon {
+  background: url("../../img/bottom_press_icon04@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .order {
+  background: url("../../img/bottom_press_icon03@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .news {
+  background: url("../../img/bottom_press_icon02@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .info {
+  background: url("../../img/bottom_press_icon01@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .publish-icon {
+  width: 88px;
+  height: 76px;
+  display: block;
+  background: url("../../img/bottom_icon05@2x.png") no-repeat 28px 6px;
+  background-size: 44px 38px;
+}
+.footer .footer-block .footer-name {
+  font-size: 14px;
+}

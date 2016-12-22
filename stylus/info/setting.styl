@@ -1,0 +1,58 @@
+@import '../head.styl'
+
+.header
+	.header-title
+		color #323232
+
+.setting_con
+	.setting_cell
+		height 50px
+		margin-top 11px
+		background #fff
+		line-height 50px
+		padding 0 15px
+		position relative
+		.setting_btn
+			content ''
+			width 53px
+			height 30px
+			display inline-block
+			background #ea5404
+			float right
+			margin-top 10px
+			border-radius 25px
+			position relative
+			&:after
+				content ''
+				width 30px
+				height 30px
+				background #fff
+				position absolute
+				border-radius 50%
+	.about
+	.clear
+		&:after
+			content ''
+			position absolute
+			top 50%
+			right 15px
+			display block
+			width 16px
+			height 30px
+			margin-top -15px
+			background url(../../img/content_list_right_icon@2x.png) no-repeat right 0 center
+			background-size 50%
+		.clear_count
+			position absolute
+			right 35px
+			color #bfbfbf
+			font-size 14px
+.logout_btn
+	height 50px
+	margin-top 23px
+	line-height 50px
+	text-align center
+	background #fff
+
+@import '../mask.styl'
+

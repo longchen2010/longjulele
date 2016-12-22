@@ -1,0 +1,84 @@
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.header .header-title {
+  color: #323232;
+}
+.demand-cells {
+  padding: 0 12px;
+}
+.demand-cells .demand-cell {
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 12px;
+  border-radius: 5px;
+  line-height: 30px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.demand-cells .demand-cell .demand-title {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  position: relative;
+}
+.demand-cells .demand-cell .demand-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: -10px;
+  left: 0;
+  background: url("../../img/content_list_border.9@2x.png") no-repeat;
+  background-size: 100% 50%;
+}
+.demand-cells .demand-cell .demand-title .d-t-name {
+  flex: 1;
+}
+.demand-cells .demand-cell .demand-title .d-t-time {
+  color: #646464;
+  font-style: normal;
+  text-align: right;
+  font-size: 12px;
+}
+.demand-cells .demand-cell .demand-info {
+  margin: 0;
+  padding: 12px;
+  padding-bottom: 5px;
+  line-height: 18px;
+  font-size: 13px;
+}
+.demand-cells .demand-cell .demand-footer {
+  text-align: center;
+}
+.demand-cells .demand-cell .demand-footer .btn-detail {
+  width: 85px;
+  height: 25px;
+  background-color: #efeff4;
+  color: #707071;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 4px 10px;
+}

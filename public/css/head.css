@@ -1,0 +1,24 @@
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}

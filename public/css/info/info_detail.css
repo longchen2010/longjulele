@@ -1,0 +1,103 @@
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.header .header-title {
+  color: #323232;
+}
+.info_box {
+  background-color: #fff;
+  border-top: 1px solid #d6d7dc;
+  padding: 22px 0;
+}
+.info_box .info_img {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  background: url("../../img/geren.png") no-repeat center;
+  background-size: 80%;
+}
+.info_box .info_name {
+  text-align: center;
+  line-height: 24px;
+  font-size: 1.2rem;
+  color: #323232;
+  font-weight: 500;
+}
+.info_box .info_desc {
+  text-align: center;
+  line-height: 24px;
+  color: #7f7f7f;
+  font-size: 14px;
+}
+.info_box .info_edit {
+  width: 6em;
+  margin: 0 auto;
+  margin-top: 12px;
+  padding: 4px 15px;
+  color: #ea5404;
+  border: 1px solid #ea5404;
+  border-radius: 5px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.info_cells {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.info_cells .info-cell {
+  display: flex;
+  padding: 0 12px;
+  line-height: 40px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.info_cells .info-cell .info-name {
+  flex: 3;
+  font-size: 1em;
+  color: #646464;
+}
+.info_cells .info-cell .info-content {
+  flex: 4;
+  text-indent: 10px;
+}
+.info_cells .image-cell {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-top: 22px;
+}
+.info_cells .image-cell .image-block .box-img {
+  width: 100px;
+  height: 64px;
+  background: #878787;
+  border-radius: 5px;
+}
+.info_cells .image-cell .image-block .title {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  color: #646464;
+  font-size: 14px;
+}

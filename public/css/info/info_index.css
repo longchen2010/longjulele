@@ -1,0 +1,171 @@
+body {
+  background: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.login_box {
+  position: relative;
+  display: flex;
+  height: 95px;
+  padding: 0 15px;
+  background: #fff;
+}
+.login_box .login_img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  border-radius: 50%;
+  background: url("../../img/login_user-head@2x.png") no-repeat center;
+  background-size: cover;
+}
+.login_box .login_con {
+  flex: 1;
+  padding-left: 80px;
+  line-height: 95px;
+}
+.login_box:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  margin-top: -18px;
+  width: 20px;
+  height: 36px;
+  background: url("../../img/login_right_icon@2x.png") no-repeat center;
+  background-size: 50%;
+}
+.s_box {
+  background: #fff;
+  border-top: 1px solid #d6d7dc;
+  height: 45px;
+  display: flex;
+  position: relative;
+}
+.s_box .s_left,
+.s_box .s_right {
+  flex: 1;
+  text-align: center;
+  line-height: 45px;
+}
+.s_box .s_left .count,
+.s_box .s_right .count {
+  font-weight: 600;
+  font-size: 18px;
+}
+.s_box .s_left .title,
+.s_box .s_right .title {
+  color: #727272;
+  font-size: 14px;
+}
+.s_box .s_left:after {
+  content: '';
+  width: 1px;
+  height: 31px;
+  background-color: #d6d7dc;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+}
+.link_cell {
+  position: relative;
+  height: 50px;
+  padding-left: 45px;
+  background: #fff url("../../img/content_list_icon01@2x.png") no-repeat 15px center;
+  background-size: 20px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+.link_cell:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -15px;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat right 0 center;
+  background-size: 50%;
+}
+.cell_two {
+  background: #fff url("../../img/content_list_icon02@2x.png") no-repeat 15px center;
+  background-size: 20px;
+}
+.cell_three {
+  background: #fff url("../../img/content_list_icon05@2x.png") no-repeat 15px center;
+  background-size: 20px;
+}
+.cell_four {
+  background: #fff url("../../img/content_list_icon03@2x.png") no-repeat 15px center;
+  background-size: 20px;
+}
+.cell_five {
+  background: #fff url("../../img/content_list_icon04@2x.png") no-repeat 15px center;
+  background-size: 20px;
+}
+.footer {
+  height: 50px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d6d7dc;
+  display: flex;
+}
+.footer .footer-block {
+  text-align: center;
+  color: #b4b4b4;
+  flex: 1;
+}
+.footer .footer-block .footer-icon {
+  width: 50px;
+  height: 25px;
+  display: block;
+  background: url("../../img/bottom_nor_icon04@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+  margin: 0 auto;
+}
+.footer .footer-block .order {
+  background: url("../../img/bottom_nor_icon03@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .news {
+  background: url("../../img/bottom_nor_icon02@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .info {
+  background: url("../../img/bottom_nor_icon01@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active {
+  color: #ea5404;
+}
+.footer .footer-block.active .footer-icon {
+  background: url("../../img/bottom_press_icon04@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .order {
+  background: url("../../img/bottom_press_icon03@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .news {
+  background: url("../../img/bottom_press_icon02@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block.active .info {
+  background: url("../../img/bottom_press_icon01@2x.png") no-repeat center top 5px;
+  background-size: 45% 80%;
+}
+.footer .footer-block .publish-icon {
+  width: 88px;
+  height: 76px;
+  display: block;
+  background: url("../../img/bottom_icon05@2x.png") no-repeat 28px 6px;
+  background-size: 44px 38px;
+}
+.footer .footer-block .footer-name {
+  font-size: 14px;
+}

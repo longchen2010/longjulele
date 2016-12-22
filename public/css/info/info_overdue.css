@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.header .header-title {
+  color: #323232;
+}
+.overdue-list {
+  margin-top: 10px;
+}
+.overdue-list .overdue-cell {
+  background: #fff;
+  padding: 12px;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+}
+.overdue-list .overdue-cell .delete {
+  width: 65px;
+  line-height: 80px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  color: #ea5404;
+  display: none;
+}
+.overdue-list .overdue-cell .overdue-con {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.overdue-list .overdue-cell .overdue-con h4 {
+  font-weight: 600;
+  font-size: 14px;
+}
+.overdue-list .overdue-cell .overdue-con p {
+  line-height: 24px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+.overdue-list .overdue-cell .overdue-con .overdue-btn {
+  width: 4em;
+  padding: 4px 10px;
+  border: 1px solid #ea5404;
+  border-radius: 5px;
+  color: #ea5404;
+  font-size: 12px;
+}
+.overdue-list .overdue-cell .overdue-con .overdue-price {
+  color: #ea5404;
+  font-weight: 600;
+  font-size: 14px;
+}
+.overdue-list .overdue-cell .overdue-tips {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+.overdue-list .overdue-cell .overdue-tips .overdued {
+  position: absolute;
+  right: 12px;
+  top: 20px;
+}
+.overdue-list .overdue-cell .overdue-tips .overdue-title {
+  position: absolute;
+  bottom: 18px;
+  right: -1px;
+}

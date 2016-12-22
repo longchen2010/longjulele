@@ -1,0 +1,93 @@
+* {
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.require {
+  padding: 4px 15px;
+  color: #c5c5c6;
+}
+.agent_con {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.agent_con .agent_img {
+  width: 65px;
+  height: 65px;
+  background: #878787;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 65px;
+  color: #fff;
+  font-size: 12px;
+}
+.agent_con .form-list {
+  width: 230px;
+  margin: 0 auto;
+}
+.agent_con .form-list .form-cell {
+  margin-top: 10px;
+}
+.agent_con .form-list .form-cell .form-cell-input {
+  width: 230px;
+  border: none;
+  padding: 6px 0;
+  padding-left: 10px;
+  background: #efeff4;
+  border-radius: 3px;
+}
+.agent_con .agent-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.agent_con .agent-box .agent_block {
+  width: 100px;
+  height: 63px;
+  background: #878787;
+  text-align: center;
+  line-height: 63px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+.bt_box {
+  padding: 0 15px;
+  margin-top: 45px;
+}
+.bt_box .btn_login {
+  border: none;
+  display: block;
+  background: #ea5404;
+  width: 100%;
+  padding: 12px 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}

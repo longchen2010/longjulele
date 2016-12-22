@@ -1,0 +1,55 @@
+@import '../head.styl'
+
+.header
+	.header-title
+		color #323232
+
+.demand-cells
+	padding 0 12px
+	.demand-cell
+		background-color #fff
+		padding 10px 0
+		margin-top 12px
+		border-radius 5px
+		line-height 30px
+		box-shadow 0 0 1px 1px #e0e0e0
+		.demand-title
+			display flex
+			height 30px
+			padding 0 10px
+			position relative
+			&:after
+				content ''
+				position absolute
+				width 100%
+				height 8px
+				bottom -10px
+				left 0
+				background url(../../img/content_list_border.9@2x.png) no-repeat
+				background-size 100% 50%
+			.d-t-name
+				flex 1
+			.d-t-time
+				color #646464
+				font-style normal
+				text-align right
+				font-size 12px
+		.demand-info
+			margin 0
+			padding 12px
+			padding-bottom 5px
+			line-height 18px
+			font-size 13px
+		.demand-footer
+			text-align center
+			.btn-detail
+				width 85px
+				height 25px
+				background-color #efeff4
+				color #707071
+				line-height 25px
+				text-align center
+				border-radius 3px
+				font-size 14px
+				padding 4px 10px
+

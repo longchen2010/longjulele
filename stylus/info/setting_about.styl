@@ -1,0 +1,55 @@
+@import '../head.styl'
+
+.header
+	.header-title
+		color #323232
+
+.setting_con
+	.img_logo
+		width 148px
+		height 148px
+		background url(../../img/content_flower.gif) no-repeat center
+		background-size 50%
+		margin 0 auto
+	.text_con
+		display flex
+		flex-direction row
+		flex-wrap nowrap
+		justify-content center
+		margin-top -20px
+		padding-bottom 60px
+		.text_logo
+			width 74px
+			height 16px
+			text-align left
+			color orangered
+			font-size 0.9em
+		.version
+			color #464647
+			font-size 14px
+			padding-left 5px
+
+	.setting_cell
+		height 50px
+		background #fff
+		padding 0 15px
+		line-height 50px
+		margin-top 10px
+		position relative
+		&:after
+			content ''
+			position absolute
+			top 50%
+			right 15px
+			display block
+			width 16px
+			height 30px
+			margin-top -15px
+			background url(../../img/content_list_right_icon@2x.png) no-repeat right 0 center
+			background-size 50%
+		.tel_num
+			position absolute
+			right 35px
+			color #646464
+			font-size 14px
+

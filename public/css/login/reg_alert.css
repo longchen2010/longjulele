@@ -1,0 +1,25 @@
+body {
+  background: #b2b2b2;
+  font-family: Microsoft Yahei;
+}
+.reg-alert {
+  width: 274px;
+  height: 112px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -56px;
+  margin-left: -137px;
+  text-align: center;
+}
+.reg-alert .title {
+  height: 64px;
+  line-height: 64px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+}
+.reg-alert .confirm {
+  color: #ea5404;
+}

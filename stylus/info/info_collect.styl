@@ -1,0 +1,143 @@
+*
+	margin 0
+	padding 0
+@import '../head.styl'
+
+.header
+	.header-title
+		color #323232
+
+.tab
+	height 40px
+	display flex
+	background #fff
+	line-height 40px
+	margin-top 10px
+
+	span
+		flex 1
+		text-align center
+		position relative
+		&.active
+			color #ea5404
+			border-bottom 2px solid #ea5404
+	.need
+		&:after
+			content ''
+			width 1px
+			position absolute
+			background #d6d7dc
+			height 25px
+			right 0
+			top 6px
+.demand-cells
+	padding 0 12px
+	.demand-cell
+		background-color #fff
+		padding 10px 0
+		margin-top 12px
+		border-radius 5px
+		line-height 30px
+		box-shadow 0 0 1px 1px #e0e0e0
+		.demand-title
+			display flex
+			height 30px
+			padding 0 10px
+			position relative
+			&:after
+				content ''
+				position absolute
+				width 100%
+				height 8px
+				bottom -10px
+				left 0
+				background url(../../img/content_list_border.9@2x.png) no-repeat
+				background-size 100% 50%
+			.d-t-name
+				flex 1
+			.d-t-tag
+				diaplay inline-block
+				width 45px
+				height 20px
+				background-color #15b755
+				color #fff
+				font-size 12px
+				line-height 20px
+				font-style normal
+				text-align center
+				margin 7px 0
+				border-radius 5px
+			.broker
+				background-color #0193e6
+		.demand-info
+			margin 0
+			padding 12px
+			line-height 18px
+			font-size 13px
+		.demand-footer
+			display flex
+			height 30px
+			line-height 30px
+			.btn-detail
+				width 85px
+				height 25px
+				background-color #efeff4
+				color #707071
+				line-height 25px
+				text-align center
+				border-radius 3px
+				font-size 14px
+			.demand-time
+				flex 1
+				color #646464
+				font-style normal
+				text-align right
+				font-size 12px
+				padding-right 12px
+.overdue-list
+	margin-top 10px
+	display none
+	.overdue-cell
+		background #fff
+		padding 12px
+		margin-top 10px
+		display flex
+		position relative
+		.overdue-con
+			padding-left 10px
+			padding-top 5px
+			h4
+				font-weight 600
+				font-size 14px
+			p
+				line-height 24px
+				color #7f7f7f
+				font-size 12px
+			.overdue-btn
+				width 4em
+				padding 4px 10px
+				border 1px solid #ea5404
+				border-radius 5px
+				color #ea5404
+				font-size 12px
+			.overdue-price
+				color #ea5404
+				font-weight 600
+				font-size 14px
+		.overdue-tips
+			color #7f7f7f
+			font-size 12px
+
+			.collect
+				position absolute
+				right 12px
+				top 20px
+				width 40px
+				height 36px
+				background url(../../img/nav_collect_press_icon@2x.png) no-repeat
+				display block
+				background-size 50% 50%
+			.overdue-time
+				position absolute
+				bottom 20px
+				right 12px

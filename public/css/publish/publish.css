@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(0,0,0,0.8);
+}
+.publish-box {
+  display: flex;
+  position: fixed;
+  bottom: 150px;
+  left: 16%;
+}
+.publish-box .pubish-block {
+  color: #fff;
+  text-align: center;
+}
+.publish-box .pubish-block:first-child {
+  margin-right: 30%;
+}
+.publish-box .pubish-block .publish-img {
+  width: 94px;
+  height: 94px;
+  background: url("../../img/publish_btn02@2x.png") no-repeat;
+  background-size: 100%;
+}
+.publish-box .pubish-block .img-house {
+  background: url("../../img/publish_btn01@2x.png") no-repeat;
+  background-size: 100%;
+}
+.publish-box .pubish-block .publish-name {
+  display: block;
+  margin-top: 5px;
+}
+.publish-close {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  left: 50%;
+  margin-left: -7px;
+  bottom: 22px;
+  background: url("../../img/publish_close_icon@2x.png") no-repeat;
+  background-size: 100%;
+}

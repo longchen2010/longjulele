@@ -1,0 +1,86 @@
+*
+	outline none
+@import '../head.styl'
+.form-list
+	background-color #fff
+	margin-top 20px
+	.form-cell
+		padding 0 15px
+		height 50px
+		line-height 50px
+		display flex
+		position relative
+		.form-cell-name
+			padding-left 30px
+			background url(../../img/content_ID_icon@2x.png) no-repeat 0 15px
+			width 50px
+			height 50px
+			line-height 50px
+			background-size 20%
+			flex 1
+		.form-cell-input
+			border none
+			flex 3
+			font-size 14px
+		.cell-validate
+			background url(../../img/content_verify_icon@2x.png) no-repeat 0 15px
+			background-size 13%
+		.cell-passwd
+			background url(../../img/content_password_icon@2x.png) no-repeat 0 15px
+			background-size 15%
+		.cell-iden
+			background url(../../img/content_position_icon@2x.png) no-repeat 0 15px
+			background-size 20%
+		.cell-code
+			color #fff
+			position absolute
+			right 15px
+			background-color #ea5404
+			padding 0 8px
+			border-radius 5px
+			height 30px
+			line-height 30px
+			top 50%
+			margin-top -15px
+			font-size 12px
+		.cell-box
+			position absolute
+			right 15px
+			top 30px
+			background #a3a3a3
+			border-radius 5px
+			display none
+			ul
+				padding 0
+				margin 0
+				list-style none
+				width 65px
+
+				color #fff
+				font-size 14px
+				li
+					text-align center
+					line-height 28px
+					border-bottom 1px solid #fff
+		&:after
+			content ''
+			height 1px
+			background-color #ccc
+			position absolute
+			left 15px
+			right 15px
+
+.bt_box
+	padding 0 15px
+	margin-top 45px
+	.btn_reg
+		border none
+		display block
+		background #c7c7c7
+		width 100%
+		padding 12px 0
+		color #fff
+		border-radius 3px
+		font-size 1.1rem
+
+

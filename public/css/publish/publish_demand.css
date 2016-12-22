@@ -1,0 +1,129 @@
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+input {
+  border: none;
+  outline: none;
+  font-family: Microsoft Yahei;
+}
+.header .icon-back {
+  background: transparent;
+  text-indent: 1em;
+}
+.header .header-title {
+  color: #323232;
+}
+.header .header-publish {
+  color: #ea5404;
+  padding-right: 15px;
+}
+.form-cells .form-cell {
+  padding: 0 15px;
+  margin-top: 10px;
+}
+.form-cells .form-cell .form-input,
+.form-cells .form-cell .form-area {
+  width: 95%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  border: 1px solid #d6d7dc;
+  border-radius: 5px;
+  padding-left: 5%;
+  font-size: 14px;
+}
+.form-cells .form-cell .form-area {
+  height: 300px;
+  line-height: 24px;
+  padding-top: 10px;
+  font-family: Microsoft Yahei;
+}
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.cancel-alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.cancel-alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.cancel-alert .confirm {
+  color: #ea5404;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  margin: 0;
+}
+.cancel-alert .confirm span {
+  flex: 1;
+  text-align: center;
+}
+.cancel-alert .confirm .cancel {
+  border-right: 1px solid #d6d7dc;
+  color: #323232;
+}
+.publish-alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.publish-alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.publish-alert .confirm {
+  color: #ea5404;
+  line-light: 45px;
+}

@@ -1,0 +1,287 @@
+@import '../head.styl'
+input
+textarea
+	border none
+	outline none
+	font-family Microsoft Yahei
+
+.header
+	.icon-back
+		background none
+		text-indent 1em
+		line-height 50px
+	.header-title
+		color #323232
+
+.search-box
+	display flex
+	padding 13px 12px
+
+	.search-block
+		flex 5
+		position relative
+		.search-input
+			width 85%
+			padding 7px 0
+			padding-left 30px
+			font-size 14px
+			border 1px solid #d6d7dc
+			border-radius 3px
+		.search-icon
+			width 13px
+			height 13px
+			display block
+			position absolute
+			top 10px
+			left 10px
+			background url(../../img/content_search_icon@2x.png) no-repeat center
+			background-size 100%
+		.close-icon
+			width 15px
+			height 15px
+			display block
+			position absolute
+			top 10px
+			right 10px
+			background url(../../img/content_delet_icon@2x.png) no-repeat center
+			background-size 100%
+			display none
+			&.active
+				background url(../../img/content_img_close_icon@2x.png) no-repeat center
+				background-size 100%
+	.add-house
+		flex 2
+		margin-left 10px
+		line-height 30px
+		.add-icon
+			width 12px
+			height 12px
+			display inline-block
+			background url(../../img/content_plus_icon@2x.png) no-repeat center
+			background-size 100%
+		.add-name
+			font-size 14px
+
+.info-building
+	background-color #fff
+	padding 0 12px
+	color #646464
+	.info-title
+		padding 10px 0
+		.sm-icon
+			width 6px
+			height 6px
+			display inline-block
+			background-color #bee949
+			border-radius 50%
+			margin-right 10px
+	.building-cells
+		font-size 14px
+		padding-bottom 16px
+		.building-cell
+			display flex
+			line-height 30px
+			.building-name
+				width 25%
+				text-align right
+			.building-input
+				width 75%
+				color #bababa
+				border-bottom 1px solid #d6d7dc
+				padding-left 5px
+
+.info-house
+	margin 10px 0
+	background-color #fff
+	min-height 680px
+	padding 0 12px
+	color #646464
+	.info-title
+		padding 10px 0
+		.sm-icon
+			width 6px
+			height 6px
+			display inline-block
+			background-color #49cde9
+			border-radius 50%
+			margin-right 10px
+	.radio-box
+		padding 0 20px
+		padding-bottom 10px
+		position relative
+		&:after
+			content ''
+			position absolute
+			left 12px
+			right -12px
+			bottom 0
+			height 1px
+			background-color #e1e1e1
+		.radio-title
+			font-size 14px
+			padding-bottom 5px
+		.radio-block
+			font-size 14px
+			padding-left 10px
+			display inline-block
+			height 24px
+			line-height 24px
+			.radio-btn
+				display inline-block
+				width 8px
+				height 8px
+				margin 6px
+				border 1px solid #ea5404
+				border-radius 50%
+				vertical-align bottom
+			&.selected
+				.icon
+					display inline-block
+					width 2px
+					height 2px
+					margin 1px
+					border 2px solid transparent
+					border-radius 50%
+					background-color #ea5404
+
+	.house-cells
+		padding-top 10px
+		font-size 14px
+		.house-cell
+			height 30px
+			line-height 30px
+			margin 10px 0
+			display flex
+			.house-name
+				color #bababa
+			.house-input
+				width 32%
+				height 30px
+				padding-left 10px
+				background-color #efeff4
+				border 1px solid #e1e1e1
+				border-radius 5px
+				margin 0 5px
+			.long-input
+				width 72%
+			.textarea
+				width 72%
+				height 75px
+				padding-left 10px
+				background-color #efeff4
+				border 1px solid #e1e1e1
+				border-radius 5px
+				margin 0 5px
+			.radio-block
+				font-size 14px
+				padding-left 10px
+				display inline-block
+				height 24px
+				line-height 24px
+				margin-top 5px
+				.radio-btn
+					display inline-block
+					width 8px
+					height 8px
+					margin 6px
+					border 1px solid #ea5404
+					border-radius 50%
+					vertical-align bottom
+				&.selected
+					.icon
+						display inline-block
+						width 2px
+						height 2px
+						margin 1px
+						border 2px solid transparent
+						border-radius 50%
+						background-color #ea5404
+			.select-box
+				width 78%
+				position relative
+				margin-left 5px
+				.select-title
+					position relative
+					height 30px
+					padding 0 10px
+					background-color #efeff4
+					border-radius 3px
+					line-height 30px
+					color #b4b4b4
+					&:after
+						content ''
+						position absolute
+						right 15px
+						top 10px
+						width 14px
+						height 8px
+						display block
+						background url(../../img/content_list_icon00@2x.png) no-repeat center
+						background-size 14px 8px
+				.select-list
+					display none
+					background-color #efeff4
+					list-style none
+					position absolute
+					top 29px
+					left 0
+					right 0
+					border 1px solid #eee
+					border-radius 0 0 5px 5px
+					margin 0
+					padding 0
+					.select-li
+						position relative
+						height 32px
+						padding 0 10px
+						line-height 32px
+						&:after
+							content ''
+							position absolute
+							right 0
+							bottom 0
+							left 10px
+							display block
+							height 1px
+							background-color #e1e1e1
+						&:last-child:after
+							display none
+
+
+	.upload
+		width 75px
+		height 75px
+		background-color #d4d4d9
+		text-align center
+		margin-top 60px
+		margin-left 10px
+		font-size 14px
+		.upload-block
+			padding-top 20px
+			position relative
+			.add-icon
+				width 24px
+				height 24px
+				display block
+				background url(../../img/content_plus_icon@2x.png) no-repeat center
+				margin-left 24px
+			.file
+				position absolute
+				top 50%
+				left 0
+				width 100%
+				opacity 0
+.footer
+	height 60px
+	background-color #fff
+	.publish-block
+		padding-top 10px
+		.publish-btn
+			width 90%
+			margin 0 auto
+			background #ea5404
+			padding 10px 0
+			text-align center
+			color #fff
+			border-radius 5px
+@import '../mask.styl'

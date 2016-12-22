@@ -1,0 +1,310 @@
+@import '../head.styl'
+*
+	margin 0
+	padding 0
+body
+	background-color #efeff4
+.header
+	position absolute
+	top 0
+	z-index 5
+	width 100%
+	color #fff
+	background-color transparent
+	background url(../../img/banner_img_shadow@2x.png) no-repeat center top
+	background-size 100% 100%
+	border 0
+	.icon
+		position absolute
+		top 20px
+	.icon-back
+		background url(../../img/nav_back_icon02@2x.png) no-repeat center
+		background-size 25%
+	.icon-share
+		display block
+		width 50px
+		height 50px
+		background url(../../img/nav_share_icon@2x.png) no-repeat center
+		background-size 50%
+		right 54px
+	.icon-collect
+		display block
+		width 50px
+		height 50px
+		background url(../../img/nav_collect_nor_icon@2x.png) no-repeat center
+		background-size 50%
+		right 12px
+
+.slider-container
+	position relative
+	width 375px
+	height 330px
+	overflow hidden
+	.slider-text
+		position absolute
+		bottom 10px
+		left 15px
+		right 15px
+		display flex
+		color #fff
+		.price-block
+			font-size 14px
+			flex 1
+			.price
+				color #ea5404
+				font-size 16px
+		.count-block
+			flex 1
+			text-align right
+			font-size 14px
+			.count
+				font-size 18px
+
+.slider-info
+	background-color #fff
+	.slider-block
+		display flex
+		height 76px
+		border-bottom 1px solid #d6d7dc
+		.slider-con
+			padding 12px
+			line-height 20px
+			flex 1
+			h3
+				font-weight normal
+			h4
+				font-weight normal
+				color #727272
+			p
+				font-size 12px
+				color #b4b4b4
+		.map-block
+			padding 0 15px
+			.icon
+				display block
+				width 32px
+				height 40px
+				background url(../../img/content_icon_map@2x.png) no-repeat bottom center
+				background-size 16px 20px
+				margin-left 15px
+			.map-txt
+				font-size 14px
+				display block
+				line-height 18px
+				color #b4b4b4
+	.slider-area
+		line-height 36px
+		padding-left 12px
+		border-bottom 1px solid #d6d7dc
+		color #646464
+		font-size 14px
+
+.all-house
+	margin-top 10px
+	background-color #fff
+	.house-title
+		height 32px
+		line-height 32px
+		text-align center
+		font-size 14px
+		position relative
+		&:before
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			left 38%
+		&:after
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			right 38%
+
+	.house-cell
+		background-color #fff
+		padding 3px 12px
+		display flex
+		min-height 56px
+		&.even
+			background-color #efeff4
+		.house-img
+			width 74px
+			height 49px
+			background url(../../img/content_img_home01@2x.png) no-repeat center
+			background-size 100% 100%
+			position relative
+		.house-con
+			flex 1
+			text-align center
+			span
+				display block
+				font-size 14px
+				color #7c7c7d
+			.house-name
+				font-size 16px
+				color #323232
+		.house-price
+			flex 1
+			line-height 55px
+			font-size 14px
+			.price
+				color #ea5404
+				font-style normal
+				font-size 16px
+		.house-order
+			line-height 55px
+			font-size 14px
+			text-align right
+			color #707071
+			position relative
+			&:before
+				content ''
+				position absolute
+				left -10px
+				top 15px
+				width 1px
+				height 33px
+				background #d6d7dc
+		.img-tips
+			position absolute
+			color #fff
+			background rgba(0,0,0,0.5)
+			width 100%
+			height 100%
+			text-align center
+			line-height 49px
+		.more-house
+			padding 0 10px
+			font-size 14px
+			width 4em
+			height 24px
+			line-height 24px
+			margin 25px auto
+			background-color #efeff4
+			border-radius 5px
+			color #646464
+
+.building-info
+	margin-top 10px
+	background-color #fff
+	.building-title
+		position relative
+		height 32px
+		line-height 32px
+		text-align center
+		font-size 14px
+		&:before
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			left 38%
+		&:after
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			right 38%
+	.building-cell
+		display flex
+		line-height 30px
+		.building-name
+			width 25%
+			text-align right
+			color #646464
+			font-size 14px
+		.building-input
+			width 75%
+			padding-left 5px
+			border none
+			outline none
+			border-bottom 1px solid #d6d7dc
+			background #fff
+			font-size 12px
+			font-family Microsoft Yahei
+	.building-img
+		padding 0 12px
+		border-bottom 1px solid #d6d7dc
+		img
+			width 351px
+			margin-top 15px
+		.img-info
+			font-size 12px
+			padding 12px 0
+			color #5c5c5c
+			line-height 16px
+			padding-bottom 15px
+
+.around-house
+	.around-title
+		height 32px
+		line-height 32px
+		text-align center
+		font-size 14px
+		position relative
+		&:before
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			left 38%
+		&:after
+			content ''
+			position absolute
+			display block
+			width 5px
+			height 5px
+			background-color #b4b4b4
+			border-radius 50%
+			top 15px
+			right 38%
+	.around-cell
+		background-color #fff
+		margin 0 12px 12px
+		width 324px
+		.around-img
+			padding 12px
+		.around-txt
+			padding-left 12px
+			padding-bottom 15px
+			.around-name
+				line-height 24px
+			.around-price
+				font-size 14px
+				.price
+					font-size 18px
+					font-weight 500
+					color #ea5404
+
+
+
+input
+	&::-webkit-input-placeholder
+		color #323232
+
+
+
+
+
+

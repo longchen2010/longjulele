@@ -1,0 +1,53 @@
+body
+	background-color #efeff4
+	font-family Microsoft Yahei
+.header
+	display flex
+	height 50px
+	background-color #fff
+	line-height 50px
+	padding 0 15px
+	color #ea5404
+	.search-block
+		position relative
+		flex 1
+		.search-input
+			width 220px
+			padding 7px 0
+			padding-left 30px
+			font-size 14px
+			outline none
+			border 1px solid #d6d7dc
+			border-radius 3px
+			background-color #f1f1f1
+		.search-icon
+			width 13px
+			height 13px
+			display block
+			position absolute
+			top 20px
+			left 10px
+			background url(../../img/content_search_icon@2x.png) no-repeat center
+			background-size 100%
+.search-box
+	.search-text
+		padding 10px 22px
+		font-size 14px
+		color #919193
+		display flex
+		span
+			flex 1
+		.search-clear
+			text-align right
+
+	.search-list
+		background-color #fff
+		padding-left 20px
+		list-style none
+		margin 0
+		.search-li
+			height 32px
+			line-height 32px
+			border-bottom 1px solid #e1e1e1
+			&:last-child
+				border none

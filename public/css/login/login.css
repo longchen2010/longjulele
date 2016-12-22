@@ -1,0 +1,96 @@
+* {
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+  font-family: Microsoft Yahei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header-title {
+  flex: 1;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.form-list {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.form-list .form-cell {
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+.form-list .form-cell .form-cell-name {
+  padding-left: 30px;
+  background: url("../../img/content_ID_icon@2x.png") no-repeat 0 15px;
+  width: 40px;
+  height: 40px;
+  background-size: 25%;
+  flex: 1;
+}
+.form-list .form-cell .form-cell-input {
+  border: none;
+  flex: 5;
+  font-size: 14px;
+}
+.form-list .form-cell:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  left: 15px;
+  right: 15px;
+  background: #e1e1e1;
+}
+.form-list .form-cell:first-child:after {
+  content: '';
+  display: none;
+}
+.form-list .form-cell .cell-passwd {
+  background: url("../../img/content_password_icon@2x.png") no-repeat 0 15px;
+  background-size: 20%;
+}
+.bt_box {
+  padding: 0 15px;
+  margin-top: 45px;
+}
+.bt_box .btn_login {
+  border: none;
+  display: block;
+  background: #c7c7c7;
+  width: 100%;
+  padding: 12px 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.footer {
+  display: flex;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+.footer span {
+  flex: 1;
+  padding: 0 15px;
+}
+.footer .footer_reg {
+  color: #ff8a00;
+}
+.footer .footer_pass {
+  text-align: right;
+  color: #646464;
+}

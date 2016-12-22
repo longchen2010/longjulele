@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7d9c9;
+}
+.logo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 120px;
+  height: 180px;
+  margin-left: -60px;
+  margin-top: -60px;
+  background: url("../img/content.gif") no-repeat center;
+  background-size: 100%;
+}
+.copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 50px;
+  color: #999;
+  text-align: center;
+  font-family: Microsoft Yahei;
+}

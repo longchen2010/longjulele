@@ -1,1 +1,0 @@
-$(function(){var n=$(".btn_login");n.on("tap",function(){location.href="/first-page/index.html"})});

@@ -1,0 +1,64 @@
+*
+	outline none
+@import '../head.styl'
+
+.form-list
+	background-color #fff
+	margin-top 20px
+	.form-cell
+		padding 0 15px
+		height 50px
+		line-height 50px
+		display flex
+
+		.form-cell-name
+			padding-left 30px
+			background url(../../img/content_ID_icon@2x.png) no-repeat 0 15px
+			width 40px
+			height 40px
+			background-size 25%
+			flex 1
+		.form-cell-input
+			border none
+			flex 5
+			font-size 14px
+
+		&:after
+			position absolute
+			content ''
+			height 1px
+			left 15px
+			right 15px
+			background #e1e1e1
+		&:first-child:after
+			content ''
+			display none
+
+		.cell-passwd
+			background url(../../img/content_password_icon@2x.png) no-repeat 0 15px
+			background-size 20%
+
+.bt_box
+	padding 0 15px
+	margin-top 45px
+	.btn_login
+		border none
+		display block
+		background #c7c7c7
+		width 100%
+		padding 12px 0
+		color #fff
+		border-radius 5px
+		font-size 1.1rem
+.footer
+	display flex
+	padding 0 15px
+	margin-top 20px
+	span
+		flex 1
+		padding 0 15px
+	.footer_reg
+		color #ff8a00
+	.footer_pass
+		text-align right
+		color #646464
