@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2016/12/14 0014.
+ * Created by Administrator on 2016/12/13 0013.
  */
 //轮播图
 var $slider = $('.slider_block');
@@ -56,7 +56,7 @@ function autoSwipe(){
 }
 autoSwipe();
 
-//轮播图下的块
+//轮播图下
 $query = $('.query_block');
 $('.down-box' ).hide();
 $query.on('tap', function(){
@@ -90,7 +90,7 @@ var $moreLi = $('.more-li');
 $moreLi.on('tap', function(){
 	var index = $(this ).index();
 	$moreLi.removeClass('active' ).eq(index ).addClass('active');
-	$('.more .box-right' ).hide().eq(index).show();
+	$('.more .box-right').hide().eq(index).show();
 });
 
 //按价格排序

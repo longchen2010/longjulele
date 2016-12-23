@@ -7,6 +7,8 @@ var path = require('path');
 var express = require('express');
 //引入转发请求插件
 var proxy = require('http-proxy-middleware');
+var sha1=require("sha1");
+
 
 //实例 express
 var app = express();
@@ -18,6 +20,20 @@ app.use('/api',proxy({
 		'^/api': '/'
 	}
 }));
+app.use("/weixin",function(req,res){
+	var obj=req.query;
+	console.log("weixin",obj);
+	var arr=[obj.token,obj.timestamp, obj.nonce];
+	arr.sort();
+	var str=sha1(arr.join(""));
+	console.log("sha1 ",str);
+	console.log("signature",obj.signature==str);
+	if(obj.signature===str){
+		res.send(obj.echostr).end();
+	}else{
+		res.send("错误").end();
+	}
+});
 //http://127.0.0.1:9888/api/index
 //替换为 http://122.10.30.153:9901/index
 
@@ -45,7 +61,7 @@ app.use('/api',proxy({
 	pathRewrite:{'^/api':'/'}
 }));
 
-//监听端口 16926，用来启动服务
+//监听端口 16912，用来启动服务
 app.listen(16912, function(){
 	console.log('server run at port 16912');
 });

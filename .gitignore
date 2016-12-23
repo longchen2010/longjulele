@@ -1,4 +1,5 @@
-
+ngrok.conf
+ngrok.exe
 node_modules/
 .idea/
 .vscode/
