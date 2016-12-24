@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2015/12/8 0008.
+ * Created by Administrator on 2016/12/8 0008.
  */
 //首先引入 gulp 模块
 var gulp = require('gulp');
@@ -19,7 +19,7 @@ var reload = browserSync.reload;
 gulp.task('nodemon', function(ab){
 	var ft = false;
 	return nodemon({
-		script: './app.js'
+		script: './server.js'
 	} ).on('start', function(){
 		if(!ft){
 			ab();

@@ -64,13 +64,36 @@
 	<div class="upload-box">
 		<ul>
 			<li>拍照</li>
-			<li><input type="file" class="file">从相册选择</li>
+			<li><input type="file" class="file" id="uploadImg">从相册选择</li>
 			<li class="cancel">取消</li>
 		</ul>
 	</div>
-
+	<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 	<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 	<script src="../public/libs/zepto/touch.js"></script>
 	<script src="../public/js/info/href.js"></script>
+
+<script>
+	(function($){
+		$("#uploadImg").on("click",function(){
+			var files=$("#uploadImg")[0].files;
+			var file=files[0];
+			var formData=new FormData();
+			formData.append("imgData",file);
+			$.ajax({
+				url:"/api/img/upload/",
+				type:"post",
+				dataType:"json",
+				data:formData,
+				cache:false,
+				contentType:false,
+				processData:false,
+				success:function(result){
+					console.log(result);
+				}
+			})
+		})
+	}(jQuery))
+</script>
 </body>
 </html>
